@@ -1,0 +1,30 @@
+.category {
+    background-color: $white;
+
+    &__title {
+        padding: 10px;
+
+        text-transform: uppercase;
+        letter-spacing: 0.333px;
+        font-size: 16px;
+    }
+
+    &__link {
+        position: relative;
+
+        display: inline-block;
+        padding: 5px 10px;
+        width: 100%;
+
+        color: black;
+        font-size: 14px;
+        text-overflow: ellipsis;
+        text-decoration: none;
+        white-space: nowrap;
+        letter-spacing: 0.333px;
+
+        &:hover {
+            color: $green;
+        }
+    }
+}

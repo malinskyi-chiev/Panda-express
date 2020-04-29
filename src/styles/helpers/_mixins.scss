@@ -1,0 +1,62 @@
+// Styles for fonts
+@mixin font($size: false, $lh: false, $weight: false, $color: false) {
+    @if $size {
+        font-size: $size;
+    }
+
+    @if $lh {
+        line-height: $lh;
+    }
+
+    @if $weight {
+        font-weight: $weight;
+    }
+
+    @if $color {
+        color: $color;
+    }
+}
+
+// Pseudo-classes for links
+@mixin link($link, $visit, $hover, $active) {
+    text-decoration: none;
+    color: $link;
+    
+    &:visited {
+      color: $visit;
+    }
+
+    &:hover {
+      color: $hover;
+    }
+
+    &:active {
+      color: $active;
+    }
+}
+
+// Pseudo-elements
+@mixin pseudo($content: '', $display: block, $pos: absolute) {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+// Centering
+@mixin сentering-xy() {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin сentering-x() {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin сentering-y() {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
