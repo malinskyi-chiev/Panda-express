@@ -30,8 +30,8 @@
     "imagemin-webp": "^5.1.0",
     "imagemin-zopfli": "^6.0.0",
     "require-dir": "^1.2.0",
-    "webpack": "^4.42.1",
-    "webpack-stream": "^5.2.1"
+    "webpack": "^5.94.0",
+    "webpack-stream": "^7.0.0"
   },
   "dependencies": {}
 }
